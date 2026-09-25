@@ -2,7 +2,7 @@
   "id": "aa77013b-18f1-4679-9678-6d455d3536c5",
   "revision": 0,
   "last_node_id": 383,
-  "last_link_id": 1444,
+  "last_link_id": 1445,
   "nodes": [
     {
       "id": 91,
@@ -296,7 +296,7 @@
         "ver": "0.17.0"
       },
       "widgets_values": [
-        882167837292397,
+        862223544382505,
         "randomize",
         24,
         2,
@@ -305,7 +305,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 882167837292397,
+        "seed": 862223544382505,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 2,
@@ -365,7 +365,7 @@
         "ver": "0.17.0"
       },
       "widgets_values": [
-        972478366251083,
+        781698528193654,
         "randomize",
         24,
         6,
@@ -374,7 +374,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 972478366251083,
+        "seed": 781698528193654,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 6,
@@ -737,13 +737,32 @@
             }
           }
         },
-        "Last Time Model File": "preview3d_advanced_7ea7e1ecf76c4043a905e08b3900fe7a.glb [temp]",
+        "Last Time Model File": "preview3d_advanced_71c7c37c8c7c4a878bc3d653fb51a819.glb [temp]",
         "Scene Config": {
           "showGrid": true,
           "backgroundColor": "#282828",
           "backgroundImage": "",
           "backgroundRenderMode": "tiled",
-          "models": []
+          "models": [
+            {
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "quaternion": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
         },
         "Light Config": {
           "intensity": 3,
@@ -1872,11 +1891,11 @@
         "ver": "0.33.0"
       },
       "widgets_values": [
-        "ChatGPT Image Sep 22, 2026, 12_24_33 PM.png",
+        "enemy.jpg",
         "image"
       ],
       "widgets_values_named": {
-        "image": "ChatGPT Image Sep 22, 2026, 12_24_33 PM.png",
+        "image": "enemy.jpg",
         "upload": "image"
       }
     },
@@ -2263,7 +2282,7 @@
         60
       ],
       "flags": {},
-      "order": 55,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -2304,7 +2323,7 @@
         62
       ],
       "flags": {},
-      "order": 60,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -2344,7 +2363,7 @@
         40
       ],
       "flags": {},
-      "order": 62,
+      "order": 61,
       "mode": 0,
       "inputs": [
         {
@@ -2524,8 +2543,8 @@
       "id": 330,
       "type": "UnwrapMesh",
       "pos": [
-        1509.3586080402324,
-        1718.3462202918795
+        1518.8648548120289,
+        1727.8525577228286
       ],
       "size": [
         260,
@@ -2546,7 +2565,8 @@
           "name": "mesh",
           "type": "MESH",
           "links": [
-            1310
+            1310,
+            1445
           ]
         }
       ],
@@ -2572,21 +2592,21 @@
       "id": 331,
       "type": "BakeTextureFromVoxel",
       "pos": [
-        1497.7654462972982,
-        1974.5409170802109
+        1524.699917919733,
+        2018.883840792086
       ],
       "size": [
         270,
         102
       ],
       "flags": {},
-      "order": 54,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
           "name": "mesh",
           "type": "MESH",
-          "link": 1437
+          "link": 1445
         },
         {
           "name": "voxel_colors",
@@ -2645,7 +2665,7 @@
         134
       ],
       "flags": {},
-      "order": 57,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -2708,7 +2728,7 @@
         40
       ],
       "flags": {},
-      "order": 59,
+      "order": 60,
       "mode": 0,
       "inputs": [
         {
@@ -2745,7 +2765,7 @@
         660
       ],
       "flags": {},
-      "order": 61,
+      "order": 62,
       "mode": 0,
       "inputs": [
         {
@@ -2953,7 +2973,7 @@
           "fov": 35,
           "state": {
             "position": {
-              "x": -0.2998546692135994,
+              "x": -0.2998546692135987,
               "y": 2.527541385913511,
               "z": 7.994876613419274
             },
@@ -2966,8 +2986,8 @@
             "cameraType": "perspective",
             "quaternion": {
               "x": -0.03435297396182407,
-              "y": -0.019335353821635343,
-              "z": -0.0006647437543318019,
+              "y": -0.0193353538216353,
+              "z": -0.0006647437543318004,
               "w": 0.9992224854297022
             },
             "fov": 35,
@@ -3275,7 +3295,7 @@
         210
       ],
       "flags": {},
-      "order": 58,
+      "order": 57,
       "mode": 0,
       "inputs": [
         {
@@ -3802,7 +3822,7 @@
         660
       ],
       "flags": {},
-      "order": 56,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -3888,7 +3908,7 @@
             }
           }
         },
-        "Last Time Model File": "preview3d_advanced_55437e57f65f4f558e1c5658d862df16.glb [temp]",
+        "Last Time Model File": "preview3d_advanced_0089a0420b9f4019a4c988f0c21eb1e6.glb [temp]",
         "Light Config": {
           "intensity": 3,
           "hdri": {
@@ -3903,7 +3923,26 @@
           "backgroundColor": "#282828",
           "backgroundImage": "",
           "backgroundRenderMode": "tiled",
-          "models": []
+          "models": [
+            {
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "quaternion": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
         },
         "Model Config": {
           "upDirection": "original",
@@ -3968,8 +4007,7 @@
           "type": "MESH",
           "links": [
             1434,
-            1436,
-            1437
+            1436
           ]
         }
       ],
@@ -4073,7 +4111,7 @@
         1356.363212637761
       ],
       "size": [
-        433.109375,
+        433.09375,
         206
       ],
       "flags": {},
@@ -4892,14 +4930,6 @@
       "MESH"
     ],
     [
-      1437,
-      378,
-      0,
-      331,
-      0,
-      "MESH"
-    ],
-    [
       1438,
       342,
       0,
@@ -4930,6 +4960,14 @@
       336,
       0,
       "FILE_3D_GLB"
+    ],
+    [
+      1445,
+      330,
+      0,
+      331,
+      0,
+      "MESH"
     ]
   ],
   "groups": [
@@ -5078,10 +5116,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.556394764406146,
+      "scale": 0.5563947644061462,
       "offset": [
-        6096.947584949473,
-        -109.80721389485448
+        -152.6349329076698,
+        -604.479074432747
       ]
     },
     "frontendVersion": "1.52.7",
