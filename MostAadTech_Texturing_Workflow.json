@@ -1,8 +1,8 @@
 {
   "id": "2ec324ce-8423-444e-b2a3-7383fbb21129",
   "revision": 0,
-  "last_node_id": 128,
-  "last_link_id": 362,
+  "last_node_id": 149,
+  "last_link_id": 421,
   "nodes": [
     {
       "id": 1,
@@ -110,11 +110,13 @@
       "inputs": [
         {
           "name": "on_false",
+          "shape": 7,
           "type": "MASK",
           "link": 3
         },
         {
           "name": "on_true",
+          "shape": 7,
           "type": "MASK",
           "link": 4
         }
@@ -189,7 +191,7 @@
         270
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -317,7 +319,7 @@
         180
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -372,7 +374,7 @@
         110
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -421,7 +423,7 @@
         60
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -469,7 +471,7 @@
         90
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -704,16 +706,18 @@
         110
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
           "name": "on_false",
+          "shape": 7,
           "type": "CONDITIONING",
           "link": 20
         },
         {
           "name": "on_true",
+          "shape": 7,
           "type": "CONDITIONING",
           "link": 21
         },
@@ -759,16 +763,18 @@
         110
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
           "name": "on_false",
+          "shape": 7,
           "type": "CONDITIONING",
           "link": 17
         },
         {
           "name": "on_true",
+          "shape": 7,
           "type": "CONDITIONING",
           "link": 18
         },
@@ -864,11 +870,13 @@
       "inputs": [
         {
           "name": "on_false",
+          "shape": 7,
           "type": "MODEL",
           "link": 23
         },
         {
           "name": "on_true",
+          "shape": 7,
           "type": "MODEL",
           "link": 24
         },
@@ -1049,7 +1057,7 @@
         100
       ],
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -1109,7 +1117,7 @@
         300
       ],
       "flags": {},
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1149,18 +1157,18 @@
       },
       "widgets_values": [
         1248,
-        "fixed",
-        12,
-        1,
+        "randomize",
+        24,
+        2,
         "euler",
         "normal",
         1
       ],
       "widgets_values_named": {
         "seed": 1248,
-        "control_after_generate": "fixed",
-        "steps": 12,
-        "cfg": 1,
+        "control_after_generate": "randomize",
+        "steps": 24,
+        "cfg": 2,
         "sampler_name": "euler",
         "scheduler": "normal",
         "denoise": 1
@@ -1178,7 +1186,7 @@
         100
       ],
       "flags": {},
-      "order": 29,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1217,15 +1225,15 @@
       "id": 39,
       "type": "UnwrapMesh",
       "pos": [
-        1545.930040781165,
-        989.8951574675792
+        1595.417749644868,
+        1027.7386040065237
       ],
       "size": [
         260,
         210
       ],
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1251,13 +1259,13 @@
       },
       "widgets_values": [
         "pec",
-        4096,
+        1536,
         1,
         0.0002
       ],
       "widgets_values_named": {
         "segmenter": "pec",
-        "resolution": 4096,
+        "resolution": 1536,
         "padding": 1,
         "weld_distance": 0.0002
       }
@@ -1266,15 +1274,15 @@
       "id": 46,
       "type": "BakeTextureFromVoxel",
       "pos": [
-        1544.5950649605095,
-        1242.5830355041912
+        1592.6272774709978,
+        1283.3375580350053
       ],
       "size": [
         270,
         102
       ],
       "flags": {},
-      "order": 32,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1291,7 +1299,7 @@
           "name": "reference_mesh",
           "shape": 7,
           "type": "MESH",
-          "link": null
+          "link": 415
         }
       ],
       "outputs": [
@@ -1331,15 +1339,15 @@
       "id": 41,
       "type": "ApplyTextureToMesh",
       "pos": [
-        1561.4639998154157,
-        1387.6753648099905
+        1610.9517086791188,
+        1438.6184867414681
       ],
       "size": [
         225,
         134
       ],
       "flags": {},
-      "order": 33,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1394,21 +1402,21 @@
       "id": 43,
       "type": "Preview3DAdvanced",
       "pos": [
-        1927.799643253343,
-        922.2024806407072
+        2303.323365792679,
+        1035.732882721621
       ],
       "size": [
         520,
         660
       ],
       "flags": {},
-      "order": 36,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
           "name": "model_3d",
           "type": "FILE_3D_GLB,FILE_3D_GLTF,FILE_3D_FBX,FILE_3D_OBJ,FILE_3D_STL,FILE_3D_USDZ,FILE_3D",
-          "link": 85
+          "link": 418
         },
         {
           "name": "model_3d_info",
@@ -1459,22 +1467,22 @@
           "fov": 35,
           "state": {
             "position": {
-              "x": 3.918828989331556,
-              "y": 1.2233271791962321,
-              "z": -14.478642597909115
+              "x": -5.1032304511192175,
+              "y": 7.634350556436409,
+              "z": 4.222917153222884
             },
             "target": {
               "x": 0,
-              "y": 1.1152167061326106,
+              "y": 1.1157057804393475,
               "z": 0
             },
             "zoom": 1,
             "cameraType": "perspective",
             "quaternion": {
-              "x": -0.0004748973945794052,
-              "y": 0.9912725126839584,
-              "z": 0.0035722777347916615,
-              "w": 0.13177943277113277
+              "x": -0.3429231789434252,
+              "y": -0.3939616574541575,
+              "z": -0.16133919526883433,
+              "w": 0.8373574922751414
             },
             "fov": 35,
             "aspect": 1,
@@ -1488,7 +1496,7 @@
             }
           }
         },
-        "Last Time Model File": "preview3d_advanced_5e04dbdb968b40d7b6f58277650ade16.glb [temp]",
+        "Last Time Model File": "preview3d_advanced_58512d65766945f4b1e594118d43ed1f.glb [temp]",
         "Light Config": {
           "intensity": 3,
           "hdri": {
@@ -1513,9 +1521,9 @@
             "enabled": false,
             "mode": "translate",
             "position": {
-              "x": -0.0006573682303145922,
-              "y": 1.1151125110321594,
-              "z": 0.0005523625993073267
+              "x": 0.000007748736836621362,
+              "y": 2.4999937414048623,
+              "z": 0.000013485782379252242
             },
             "rotation": {
               "x": 0,
@@ -1523,9 +1531,9 @@
               "z": 0
             },
             "scale": {
-              "x": 5.001727343095893,
-              "y": 5.001727343095893,
-              "z": 5.001727343095893
+              "x": 5.000085832161883,
+              "y": 5.000085832161883,
+              "z": 5.000085832161883
             }
           }
         }
@@ -1545,21 +1553,21 @@
       "id": 29,
       "type": "PaintMesh",
       "pos": [
-        1555.9560118622078,
-        886.4672396754565
+        1609.8101265001148,
+        921.3996935079715
       ],
       "size": [
         230,
         60
       ],
       "flags": {},
-      "order": 30,
+      "order": 31,
       "mode": 4,
       "inputs": [
         {
           "name": "mesh",
           "type": "MESH",
-          "link": 354
+          "link": 421
         },
         {
           "name": "voxel_colors",
@@ -1586,15 +1594,15 @@
       "id": 42,
       "type": "MeshToFile3D",
       "pos": [
-        1570.095249920374,
-        1584.843473821914
+        1610.849647523028,
+        1628.5090307018777
       ],
       "size": [
         230,
         40
       ],
       "flags": {},
-      "order": 35,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -1608,7 +1616,7 @@
           "name": "model_3d",
           "type": "FILE_3D_GLB",
           "links": [
-            85
+            417
           ]
         }
       ],
@@ -1672,7 +1680,8 @@
           "name": "mesh",
           "type": "MESH",
           "links": [
-            346
+            411,
+            415
           ]
         }
       ],
@@ -1688,90 +1697,6 @@
         "mesh_filename": "p10.glb",
         "shape_encoder": "shape_enc_next_dc_f16c32_fp16.safetensors",
         "resolution": 1536
-      }
-    },
-    {
-      "id": 122,
-      "type": "LODTailorTheMeshTrimmer",
-      "pos": [
-        1206.9728201044607,
-        895.1804854679851
-      ],
-      "size": [
-        292.75,
-        710
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "mesh",
-          "type": "MESH",
-          "link": 346
-        }
-      ],
-      "outputs": [
-        {
-          "name": "mesh",
-          "type": "MESH",
-          "links": [
-            354
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LODTailorTheMeshTrimmer"
-      },
-      "widgets_values": [
-        "blender",
-        5000,
-        60,
-        1.05,
-        0.5,
-        0.1,
-        0.05,
-        true,
-        false,
-        true,
-        true,
-        true,
-        0.0015,
-        0.000001,
-        true,
-        500,
-        true,
-        true,
-        0.0001,
-        true,
-        false,
-        5,
-        false
-      ],
-      "widgets_values_named": {
-        "blender_path": "blender",
-        "target_tris": 5000,
-        "passes": 60,
-        "tolerance": 1.05,
-        "intermediate_ratio": 0.5,
-        "last_ratio": 0.1,
-        "final_ratio": 0.05,
-        "triangulate": true,
-        "symmetry": false,
-        "apply_transforms": true,
-        "join_meshes": true,
-        "voxel_rebuild": true,
-        "relative_voxel_size": 0.0015,
-        "minimum_voxel_size": 0.000001,
-        "cleanup_shells": true,
-        "min_shell_faces": 500,
-        "repair": true,
-        "merge_by_distance": true,
-        "merge_distance": 0.0001,
-        "remove_loose": true,
-        "limited_dissolve": false,
-        "dissolve_angle": 5,
-        "recalc_normals": false
       }
     },
     {
@@ -1802,10 +1727,10 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "p15.glb"
+        "p111.glb"
       ],
       "widgets_values_named": {
-        "value": "p15.glb"
+        "value": "p111.glb"
       }
     },
     {
@@ -1845,12 +1770,12 @@
         "Node name for S&R": "StringConcatenate"
       },
       "widgets_values": [
-        "Path to your models folder",
+        "path for you model",
         "p10.glb",
         ""
       ],
       "widgets_values_named": {
-        "string_a": "Path to your models folder",
+        "string_a": "path for you model",
         "string_b": "p10.glb",
         "delimiter": ""
       }
@@ -1886,15 +1811,15 @@
       "id": 128,
       "type": "MeshSmoothNormals",
       "pos": [
-        1542.9657151395213,
-        1676.723009552442
+        1601.1865686933932,
+        1745.1323375788168
       ],
       "size": [
         270,
         62
       ],
       "flags": {},
-      "order": 34,
+      "order": 35,
       "mode": 4,
       "inputs": [
         {
@@ -1916,10 +1841,203 @@
         "Node name for S&R": "MeshSmoothNormals"
       },
       "widgets_values": [
-        180
+        10
       ],
       "widgets_values_named": {
-        "crease_angle": 180
+        "crease_angle": 10
+      }
+    },
+    {
+      "id": 147,
+      "type": "CuMeshGeometryDecimate",
+      "pos": [
+        1186.181150052776,
+        980.3519001911163
+      ],
+      "size": [
+        344.78125,
+        254
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "link": 411
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "links": [
+            419
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CuMeshGeometryDecimate"
+      },
+      "widgets_values": [
+        6000000,
+        1e-8,
+        0.01,
+        0.001,
+        true,
+        true,
+        true
+      ],
+      "widgets_values_named": {
+        "target_faces": 6000000,
+        "initial_threshold": 1e-8,
+        "edge_length_weight": 0.01,
+        "skinny_triangle_weight": 0.001,
+        "unload_models": true,
+        "output_smooth_normals": true,
+        "verbose": true
+      }
+    },
+    {
+      "id": 148,
+      "type": "LODsmithMergeWatertight",
+      "pos": [
+        1916.3260706338172,
+        1189.6545326309165
+      ],
+      "size": [
+        354.75,
+        278
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "file_3d_glb",
+          "type": "FILE_3D_GLB",
+          "link": 417
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_3d_glb",
+          "type": "FILE_3D_GLB",
+          "links": [
+            418
+          ]
+        },
+        {
+          "name": "is_watertight",
+          "type": "BOOLEAN",
+          "links": null
+        },
+        {
+          "name": "boundary_edges",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "non_manifold_edges",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "final_distance",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "print_file_3d_glb",
+          "type": "FILE_3D_GLB",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LODsmithMergeWatertight"
+      },
+      "widgets_values": [
+        "blender",
+        0.0001,
+        10000,
+        600
+      ],
+      "widgets_values_named": {
+        "blender_path": "blender",
+        "merge_distance": 0.0001,
+        "max_steps": 10000,
+        "timeout_seconds": 600
+      }
+    },
+    {
+      "id": 149,
+      "type": "LODTailorTheMeshTrimmer",
+      "pos": [
+        1220.7173315554355,
+        1298.2448433842983
+      ],
+      "size": [
+        292.75,
+        514
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "link": 419
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "links": [
+            421
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LODTailorTheMeshTrimmer"
+      },
+      "widgets_values": [
+        "blender",
+        60000,
+        3,
+        1.05,
+        0.5,
+        0.25,
+        0.2,
+        true,
+        false,
+        true,
+        0.0015,
+        0.000001,
+        0.0001,
+        100,
+        true,
+        1800
+      ],
+      "widgets_values_named": {
+        "blender_path": "blender",
+        "target_tris": 60000,
+        "passes": 3,
+        "tolerance": 1.05,
+        "intermediate_ratio": 0.5,
+        "last_ratio": 0.25,
+        "final_ratio": 0.2,
+        "triangulate": true,
+        "symmetry": false,
+        "voxel_rebuild": true,
+        "relative_voxel_size": 0.0015,
+        "minimum_voxel_size": 0.000001,
+        "seal_distance": 0.0001,
+        "seal_max_steps": 100,
+        "seal_keep_trying": true,
+        "timeout_seconds": 1800
       }
     }
   ],
@@ -2205,14 +2323,6 @@
       "MESH"
     ],
     [
-      85,
-      42,
-      0,
-      43,
-      0,
-      "FILE_3D_GLB"
-    ],
-    [
       93,
       39,
       0,
@@ -2285,14 +2395,6 @@
       "MODEL"
     ],
     [
-      346,
-      121,
-      2,
-      122,
-      0,
-      "MESH"
-    ],
-    [
       352,
       125,
       0,
@@ -2307,14 +2409,6 @@
       125,
       0,
       "STRING"
-    ],
-    [
-      354,
-      122,
-      0,
-      29,
-      0,
-      "MESH"
     ],
     [
       355,
@@ -2337,6 +2431,54 @@
       128,
       0,
       42,
+      0,
+      "MESH"
+    ],
+    [
+      411,
+      121,
+      2,
+      147,
+      0,
+      "MESH"
+    ],
+    [
+      415,
+      121,
+      2,
+      46,
+      2,
+      "MESH"
+    ],
+    [
+      417,
+      42,
+      0,
+      148,
+      0,
+      "FILE_3D_GLB"
+    ],
+    [
+      418,
+      148,
+      0,
+      43,
+      0,
+      "FILE_3D_GLB"
+    ],
+    [
+      419,
+      147,
+      0,
+      149,
+      0,
+      "MESH"
+    ],
+    [
+      421,
+      149,
+      0,
+      29,
       0,
       "MESH"
     ]
@@ -2396,8 +2538,8 @@
       "bounding": [
         1154.7547046074048,
         815.8230019594164,
-        1387.050953064328,
-        812.5450835429579
+        1704.3539886206725,
+        1033.7837773637661
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2418,13 +2560,13 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6934334949441685,
+      "scale": 0.7328430526597369,
       "offset": [
-        1423.9994894617844,
-        -290.1714404991187
+        4593.182253838949,
+        -425.4858669535895
       ]
     },
-    "frontendVersion": "1.49.6",
+    "frontendVersion": "1.52.7",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
