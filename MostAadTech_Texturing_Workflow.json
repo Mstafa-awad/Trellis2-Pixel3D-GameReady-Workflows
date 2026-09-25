@@ -1,8 +1,8 @@
 {
   "id": "2ec324ce-8423-444e-b2a3-7383fbb21129",
   "revision": 0,
-  "last_node_id": 149,
-  "last_link_id": 421,
+  "last_node_id": 150,
+  "last_link_id": 423,
   "nodes": [
     {
       "id": 1,
@@ -1402,8 +1402,8 @@
       "id": 43,
       "type": "Preview3DAdvanced",
       "pos": [
-        2303.323365792679,
-        1035.732882721621
+        1907.6866334397848,
+        1169.3759557957792
       ],
       "size": [
         520,
@@ -1416,7 +1416,7 @@
         {
           "name": "model_3d",
           "type": "FILE_3D_GLB,FILE_3D_GLTF,FILE_3D_FBX,FILE_3D_OBJ,FILE_3D_STL,FILE_3D_USDZ,FILE_3D",
-          "link": 418
+          "link": 423
         },
         {
           "name": "model_3d_info",
@@ -1594,8 +1594,8 @@
       "id": 42,
       "type": "MeshToFile3D",
       "pos": [
-        1610.849647523028,
-        1628.5090307018777
+        1642.60653730546,
+        1751.5666000386195
       ],
       "size": [
         230,
@@ -1616,7 +1616,7 @@
           "name": "model_3d",
           "type": "FILE_3D_GLB",
           "links": [
-            417
+            422
           ]
         }
       ],
@@ -1811,8 +1811,8 @@
       "id": 128,
       "type": "MeshSmoothNormals",
       "pos": [
-        1601.1865686933932,
-        1745.1323375788168
+        1602.5096714822791,
+        1630.013990687683
       ],
       "size": [
         270,
@@ -1855,7 +1855,7 @@
         980.3519001911163
       ],
       "size": [
-        344.78125,
+        344.765625,
         254
       ],
       "flags": {},
@@ -1897,77 +1897,6 @@
         "unload_models": true,
         "output_smooth_normals": true,
         "verbose": true
-      }
-    },
-    {
-      "id": 148,
-      "type": "LODsmithMergeWatertight",
-      "pos": [
-        1916.3260706338172,
-        1189.6545326309165
-      ],
-      "size": [
-        354.75,
-        278
-      ],
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "file_3d_glb",
-          "type": "FILE_3D_GLB",
-          "link": 417
-        }
-      ],
-      "outputs": [
-        {
-          "name": "file_3d_glb",
-          "type": "FILE_3D_GLB",
-          "links": [
-            418
-          ]
-        },
-        {
-          "name": "is_watertight",
-          "type": "BOOLEAN",
-          "links": null
-        },
-        {
-          "name": "boundary_edges",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "non_manifold_edges",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "final_distance",
-          "type": "FLOAT",
-          "links": null
-        },
-        {
-          "name": "print_file_3d_glb",
-          "type": "FILE_3D_GLB",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LODsmithMergeWatertight"
-      },
-      "widgets_values": [
-        "blender",
-        0.0001,
-        10000,
-        600
-      ],
-      "widgets_values_named": {
-        "blender_path": "blender",
-        "merge_distance": 0.0001,
-        "max_steps": 10000,
-        "timeout_seconds": 600
       }
     },
     {
@@ -2038,6 +1967,54 @@
         "seal_max_steps": 100,
         "seal_keep_trying": true,
         "timeout_seconds": 1800
+      }
+    },
+    {
+      "id": 150,
+      "type": "WTiVoFastMergeByDistance",
+      "pos": [
+        1893.8420449707698,
+        916.2570444265508
+      ],
+      "size": [
+        528.421875,
+        206
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "FILE_3D_GLB",
+          "link": 422
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "FILE_3D_GLB",
+          "links": [
+            423
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WTiVoFastMergeByDistance"
+      },
+      "widgets_values": [
+        0.0001,
+        false,
+        true,
+        "TEXTURE_SAFE",
+        100
+      ],
+      "widgets_values_named": {
+        "merge_distance": 0.0001,
+        "centroid_merge": false,
+        "remove_degenerate": true,
+        "topology_mode": "TEXTURE_SAFE",
+        "max_attempts": 100
       }
     }
   ],
@@ -2451,22 +2428,6 @@
       "MESH"
     ],
     [
-      417,
-      42,
-      0,
-      148,
-      0,
-      "FILE_3D_GLB"
-    ],
-    [
-      418,
-      148,
-      0,
-      43,
-      0,
-      "FILE_3D_GLB"
-    ],
-    [
       419,
       147,
       0,
@@ -2481,6 +2442,22 @@
       29,
       0,
       "MESH"
+    ],
+    [
+      422,
+      42,
+      0,
+      150,
+      0,
+      "FILE_3D_GLB"
+    ],
+    [
+      423,
+      150,
+      0,
+      43,
+      0,
+      "FILE_3D_GLB"
     ]
   ],
   "groups": [
@@ -2538,8 +2515,8 @@
       "bounding": [
         1154.7547046074048,
         815.8230019594164,
-        1704.3539886206725,
-        1033.7837773637661
+        1300.7784881063897,
+        1028.4910633520763
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2560,10 +2537,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7328430526597369,
+      "scale": 0.6662209569633974,
       "offset": [
-        4593.182253838949,
-        -425.4858669535895
+        492.71583124707115,
+        -507.90551746695314
       ]
     },
     "frontendVersion": "1.52.7",

@@ -1,8 +1,8 @@
 {
   "id": "aa77013b-18f1-4679-9678-6d455d3536c5",
   "revision": 0,
-  "last_node_id": 382,
-  "last_link_id": 1442,
+  "last_node_id": 383,
+  "last_link_id": 1444,
   "nodes": [
     {
       "id": 91,
@@ -2888,8 +2888,8 @@
       "id": 336,
       "type": "Preview3DAdvanced",
       "pos": [
-        3941.340621471734,
-        1485.6206610521353
+        3720.9670124943395,
+        1621.0134297584104
       ],
       "size": [
         520,
@@ -2902,7 +2902,7 @@
         {
           "name": "model_3d",
           "type": "FILE_3D_GLB,FILE_3D_GLTF,FILE_3D_FBX,FILE_3D_OBJ,FILE_3D_STL,FILE_3D_USDZ,FILE_3D",
-          "link": 1442
+          "link": 1444
         },
         {
           "name": "model_3d_info",
@@ -3587,7 +3587,7 @@
           "name": "baked_glb",
           "type": "FILE_3D_GLB",
           "links": [
-            1441
+            1443
           ]
         },
         {
@@ -4066,74 +4066,51 @@
       }
     },
     {
-      "id": 382,
-      "type": "LODsmithMergeWatertight",
+      "id": 383,
+      "type": "WTiVoFastMergeByDistance",
       "pos": [
-        3535.0752038636883,
-        1538.432102473028
+        3630.1569739532247,
+        1356.363212637761
       ],
       "size": [
-        354.75,
-        278
+        433.109375,
+        206
       ],
       "flags": {},
       "order": 66,
       "mode": 0,
       "inputs": [
         {
-          "name": "file_3d_glb",
+          "name": "model",
           "type": "FILE_3D_GLB",
-          "link": 1441
+          "link": 1443
         }
       ],
       "outputs": [
         {
-          "name": "file_3d_glb",
+          "name": "model",
           "type": "FILE_3D_GLB",
           "links": [
-            1442
+            1444
           ]
-        },
-        {
-          "name": "is_watertight",
-          "type": "BOOLEAN",
-          "links": null
-        },
-        {
-          "name": "boundary_edges",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "non_manifold_edges",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "final_distance",
-          "type": "FLOAT",
-          "links": null
-        },
-        {
-          "name": "print_file_3d_glb",
-          "type": "FILE_3D_GLB",
-          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "LODsmithMergeWatertight"
+        "Node name for S&R": "WTiVoFastMergeByDistance"
       },
       "widgets_values": [
-        "blender",
         0.0001,
-        10000,
-        600
+        false,
+        true,
+        "TEXTURE_SAFE",
+        100
       ],
       "widgets_values_named": {
-        "blender_path": "blender",
         "merge_distance": 0.0001,
-        "max_steps": 10000,
-        "timeout_seconds": 600
+        "centroid_merge": false,
+        "remove_degenerate": true,
+        "topology_mode": "TEXTURE_SAFE",
+        "max_attempts": 100
       }
     }
   ],
@@ -4939,16 +4916,16 @@
       "MESH"
     ],
     [
-      1441,
+      1443,
       367,
       0,
-      382,
+      383,
       0,
       "FILE_3D_GLB"
     ],
     [
-      1442,
-      382,
+      1444,
+      383,
       0,
       336,
       0,
@@ -5101,10 +5078,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.459830383806732,
+      "scale": 0.556394764406146,
       "offset": [
-        3803.018822379569,
-        214.37949954200738
+        6096.947584949473,
+        -109.80721389485448
       ]
     },
     "frontendVersion": "1.52.7",
